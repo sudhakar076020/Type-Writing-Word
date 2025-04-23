@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Writing Word</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: #2b323c;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container h1 {
+            font-size: 80px;
+            font-weight: 600;
+        }
+        span {
+            color: #fff724;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello <span class="auto-type"></span></h1>
+    </div>
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Sudhakar", "Full Stack Developer"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+
+</script>
+    
+</body>
+</html>
